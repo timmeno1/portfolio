@@ -6,6 +6,7 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
+import {BiDownload} from 'react-icons/bi'
 
 const contacts = [
   {
@@ -31,9 +32,9 @@ const contacts = [
 ];
 
 export const Home = () => {
-  const openContacts = (name:string, link: string) => {
-    if ( name === "email" ) {
-      window.location.href = 'mailto:' + link;
+  const openContacts = (name: string, link: string) => {
+    if (name === "email") {
+      window.location.href = "mailto:" + link;
     } else {
       window.open(link);
     }
@@ -57,16 +58,24 @@ export const Home = () => {
           onInit={(typewriter) => {
             typewriter
               .typeString(
-                `Hello my name is Timur Kodirov. <br> I'm react developer.`
+                `Hello my name is Timur Kodirov. <br> I'm React developer.`
               )
               .start();
           }}
         />
       </div>
-      <div className="absolute bottom-8 flex items-center justify-center left-1/2 animate-bounce">
+      <div
+        onClick={() => {
+          const location = document.getElementById("resume")?.offsetTop;
+          window.scrollTo(
+            location ? { top: location - 64, behavior: "smooth" } : undefined
+          );
+        }}
+        className="absolute group cursor-pointer bottom-8 flex items-center justify-center left-1/2 animate-bounce"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="h-6 w-6"
+          className="h-6 w-6 group-hover:scale-110"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
@@ -79,17 +88,35 @@ export const Home = () => {
           />
         </svg>
       </div>
-      <div className=" absolute top-4 z-10">
-        <ul className="flex justify-center gap-4 text-2xl">
-          {contacts.map((contact,i) => {
-            const Icon = contact.icon
-            return <li key={i}>
-              <a href={contact.name!=="email" ? contact.link : "mailto:"+ contact.link} >
-                <Icon />
-              </a>
-            </li>;
+      <div className=" absolute top-16 mt-2 z-10 flex flex-col items-center">
+        <div className="relative rounded-full overflow-hidden mb-4 ">
+          <div className="absolute w-full h-full rounded-full bg-slate-800/40" />
+          <img className=" h-64 w-64 rounded-full object-top object-cover" src="https://www.themoviedb.org/t/p/original/i78pnWKV3VEjJIoSU1td6DVPhqr.jpg" alt="" />
+        </div>
+        <ul className="flex justify-center items-center gap-4 text-2xl">
+          {contacts.map((contact, i) => {
+            const Icon = contact.icon;
+            return (
+              <li key={i}>
+                <a
+                  href={
+                    contact.name !== "email"
+                      ? contact.link
+                      : "mailto:" + contact.link
+                  }
+                >
+                  <Icon />
+                </a>
+              </li>
+            );
           })}
         </ul>
+        <a
+          href={"#"}
+          className="py-1 px-2 md:py-2 md:px-4 mt-4 rounded-lg flex items-center gap-x-1 select-none transition-all duration-300 hover:bg-indigo-600 hover:shadow-md hover:shadow-indigo-600/40 hover:active:shadow-none hover:active:bg-indigo-700 bg-indigo-500"
+        >
+          <span className="ml-1">Download CV </span> <BiDownload className="text-2xl" />
+        </a>
       </div>
     </section>
   );

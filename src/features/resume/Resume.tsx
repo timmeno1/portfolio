@@ -136,7 +136,7 @@ const SkillsCard = (props: SkillsCardPropsType) => {
             key={i}
             className="relative my-2 group cursor-default  rounded-md hover:ring hover:ring-teal-200 p-4 transition-all duration-300"
           >
-            <div className="group-hover:rotate-90 transform transition-all duration-300 group-hover:text-indigo-400 absolute  top-3">
+            <div className="group-hover:rotate-90 transform transition-all duration-300 group-hover:text-indigo-400 absolute  top-5">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

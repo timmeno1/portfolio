@@ -31,16 +31,16 @@ const links = [
 ]
 
 
-// export const App = () => {
-//   smoothscroll.polyfill();
-//     return (<div className="bg-slate-600 text-teal-100 min-h-screen max-h-full">
-//         <Navbar links={links}/>
-//         <Home />
-//         <Resume />
-//         <Portfolio />
-//     </div>)
-// }
+export const App = () => {
+  smoothscroll.polyfill();
+    return (<div className="bg-slate-600 text-teal-100 min-h-screen max-h-full">
+        <Navbar links={links}/>
+        <Home />
+        <Resume />
+        <Portfolio />
+    </div>)
+}
 
-export const App = () => (<CV />)
+// export const App = () => (<CV />)
 
 export default App;

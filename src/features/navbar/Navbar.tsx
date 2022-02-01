@@ -13,7 +13,7 @@ const handleClick = (link:string) => {
 }
 
   return (
-    <nav className="md:px-4 text-sm md:text-base lg:text-lg sticky w-full top-0 left-0 z-20 bg-gray-800 shadow-md shadow-teal-200/20">
+    <nav className="-mb-14 md:px-4 text-sm md:text-base lg:text-lg sticky w-full top-0 left-0 z-20 bg-gray-800 shadow-md shadow-teal-200/20">
       <div className=" md:container flex items-center justify-center md:justify-end h-16">
         <ul className="flex items-center gap-4">
           {props.links.map((link) => (

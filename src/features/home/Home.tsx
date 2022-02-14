@@ -1,4 +1,5 @@
 import destopClean from "../../assets/img/desk_clean.jpg";
+import photo from "../../assets/img/timur_kodirov.jpg";
 import Typewriter from "typewriter-effect";
 import {
   FaEnvelope,
@@ -6,7 +7,7 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
-import {BiDownload} from 'react-icons/bi'
+import { BiDownload } from "react-icons/bi";
 
 const contacts = [
   {
@@ -48,7 +49,7 @@ export const Home = () => {
       <div className="absolute left-0 w-full h-full ">
         <img
           src={destopClean}
-          alt=""
+          alt="desktop splash image"
           className="object-cover h-full w-full object-center -z-10"
         />
         <div className="absolute bg-gradient-to-b from-slate-800/70 to-slate-600/50  bg-opacity-50 left-0 top-0 w-full h-full"></div>
@@ -89,9 +90,9 @@ export const Home = () => {
         </svg>
       </div>
       <div className=" absolute top-16 mt-2 z-10 flex flex-col items-center">
-        <div className="relative rounded-full overflow-hidden mb-4 ">
+        <div className="relative rounded-full w-56 h-56 overflow-hidden mb-4 bg-slate-800 flex items-center justify-center">
           <div className="absolute w-full h-full rounded-full bg-slate-800/40" />
-          <img className=" h-64 w-64 rounded-full object-top object-cover" src="https://www.themoviedb.org/t/p/original/i78pnWKV3VEjJIoSU1td6DVPhqr.jpg" alt="" />
+          <img src={photo} alt="photo of Timur Kodirov" />
         </div>
         <ul className="flex justify-center items-center gap-4 text-2xl">
           {contacts.map((contact, i) => {
@@ -112,10 +113,11 @@ export const Home = () => {
           })}
         </ul>
         <a
-          href={"#"}
+          href={"/timur_kodirov_frontend_cv.pdf"}
           className="py-1 px-2 md:py-2 md:px-4 mt-4 rounded-lg flex items-center gap-x-1 select-none transition-all duration-300 hover:bg-indigo-600 hover:shadow-md hover:shadow-indigo-600/40 hover:active:shadow-none hover:active:bg-indigo-700 bg-indigo-500"
         >
-          <span className="ml-1">Download CV </span> <BiDownload className="text-2xl" />
+          <span className="ml-1">Download CV </span>{" "}
+          <BiDownload className="text-2xl" />
         </a>
       </div>
     </section>

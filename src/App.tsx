@@ -41,6 +41,6 @@ export const App = () => {
     </div>)
 }
 
-// export const App = () => (<CV />)
+//  export const App = () => (<CV />)
 
 export default App;

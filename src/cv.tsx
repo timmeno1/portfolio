@@ -1,4 +1,3 @@
-import { listenerCount } from "process";
 import {
   FaEnvelope,
   FaTelegramPlane,
@@ -6,7 +5,7 @@ import {
   FaGithub,
   FaMapMarkedAlt,
 } from "react-icons/fa";
-import { Portfolio } from "./features/portfolio/Portfolio";
+import photo from "./assets/img/timur_kodirov.jpg";
 
 const contacts = [
   {
@@ -129,8 +128,8 @@ const portfolioData = [
 export const CV = () => (
   <div className="text-slate-800 flex gap-4">
     <div className="left flex flex-col gap-4 items-center bg-indigo-200 min-h-screen px-4 py-2">
-      <div className="w-56 h-56 rounded-full flex items-center justify-center text-white bg-slate-700">
-        photo
+      <div className="w-56 h-56 rounded-full overflow-hidden flex items-center justify-center text-white bg-slate-700">
+        <img src={photo} alt="" />
       </div>
       <div className="text-center font-semibold  uppercase">
         <h3 className="text-2xl">Kodirov Timur</h3>

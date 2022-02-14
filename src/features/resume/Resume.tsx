@@ -13,7 +13,7 @@ const education = [
   },
   {
     organization: "Tashkent Professional College of IT",
-    speciality: "High school degree",
+    speciality: "High school",
     years: "2007-2010",
   },
 ];

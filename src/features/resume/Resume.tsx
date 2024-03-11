@@ -2,6 +2,11 @@ import { ElementFlags } from "typescript";
 
 const education = [
   {
+    organization: "Self Study",
+    speciality: "Django Rest Framework",
+    years: "2023-present",
+  },
+  {
     organization: "IT Incubator",
     speciality: "React Redux online course",
     years: "2020-2021",
@@ -24,7 +29,7 @@ const skills = [
     progress: 70,
   },
   {
-    skill: "Redux",
+    skill: "Redux Toolkit",
     progress: 60,
   },
   {
@@ -39,9 +44,24 @@ const skills = [
     skill: "Tailwindcss",
     progress: 70,
   },
+  {
+    skill: "Django-Rest-Framework",
+    progress: 50,
+  },
 ];
 
 const expirience = [
+  {
+    organization: "Pachka.com",
+    organizationType: "Snacks production company",
+    role: "Freelance frontend developer part time",
+    years: "2022",
+    responsibilities: [
+      "Design",
+      "Build React App",
+      "Deploy",
+    ],
+  },
   {
     organization: "Noname company",
     organizationType: "online game",

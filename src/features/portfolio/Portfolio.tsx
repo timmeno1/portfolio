@@ -2,6 +2,7 @@ import ytshowsCover from "../../assets/img/yt_shows_cover.jpg";
 import theGameCover from "../../assets/img/thegame_cover.jpg";
 import unifixrepairsCover from "../../assets/img/unifixrepairs_cover.jpg";
 import placeholder from "../../assets/img/desk_clean.jpg";
+import pachkaCover from "../../assets/img/pachka_cover.jpg"
 
 const portfolioData = [
   {
@@ -33,7 +34,7 @@ const portfolioData = [
   },
   {
     id: 4,
-    name: "Personal cabinet",
+    name: "E-store",
     description: "",
     date: "#",
     link: "coming soon",
@@ -42,11 +43,11 @@ const portfolioData = [
   },
   {
     id: 5,
-    name: "Snacks company website",
+    name: "Pachka snacks company website",
     description: "",
-    date: "#",
-    link: "coming soon",
-    img: placeholder,
+    date: "june 2022",
+    link: "https://pachka.netlify.app/",
+    img: pachkaCover,
     span: 1,
   },
 ];

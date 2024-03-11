@@ -5,7 +5,6 @@ import { Home } from './features/home/Home';
 import { Navbar } from './features/navbar/Navbar';
 import { Portfolio } from './features/portfolio/Portfolio';
 import { Resume } from './features/resume/Resume';
-import { CV } from './cv';
 
 const homeIcon = <Fragment><svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
@@ -40,7 +39,5 @@ export const App = () => {
         <Portfolio />
     </div>)
 }
-
-//  export const App = () => (<CV />)
 
 export default App;

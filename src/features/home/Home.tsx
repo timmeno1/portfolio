@@ -1,5 +1,5 @@
 import destopClean from "../../assets/img/desk_clean.jpg";
-import photo from "../../assets/img/timur_kodirov.jpg";
+import photo from "../../assets/img/personalLogo1.jpg";
 import Typewriter from "typewriter-effect";
 import {
   FaEnvelope,
@@ -7,7 +7,6 @@ import {
   FaLinkedinIn,
   FaGithub,
 } from "react-icons/fa";
-import { BiDownload } from "react-icons/bi";
 
 const contacts = [
   {
@@ -91,7 +90,6 @@ export const Home = () => {
       </div>
       <div className=" absolute top-16 mt-2 z-10 flex flex-col items-center">
         <div className="relative rounded-full w-56 h-56 overflow-hidden mb-4 bg-slate-800 flex items-center justify-center">
-          <div className="absolute w-full h-full rounded-full bg-slate-800/40" />
           <img src={photo} alt="photo of Timur Kodirov" />
         </div>
         <ul className="flex justify-center items-center gap-4 text-2xl">
@@ -112,13 +110,6 @@ export const Home = () => {
             );
           })}
         </ul>
-        <a
-          href={"/timur_kodirov_frontend_cv.pdf"}
-          className="py-1 px-2 md:py-2 md:px-4 mt-4 rounded-lg flex items-center gap-x-1 select-none transition-all duration-300 hover:bg-indigo-600 hover:shadow-md hover:shadow-indigo-600/40 hover:active:shadow-none hover:active:bg-indigo-700 bg-indigo-500"
-        >
-          <span className="ml-1">Download CV </span>{" "}
-          <BiDownload className="text-2xl" />
-        </a>
       </div>
     </section>
   );
